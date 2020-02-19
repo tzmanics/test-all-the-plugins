@@ -2,7 +2,10 @@
   publish = "dist/static"
   command = "ng build --prod && npm run scully"
 [[plugins]]
-package = "@netlify/plugin-sitemap"
+#package = "@netlify/plugin-sitemap"
+package = "@sdras/netlify-build-plugin-svgoptimizer"
+
   [plugin.config]
-  baseUrl = "https://test-build-plugins.netlify.com/"
-  buildDir = "dist/static"
+#  baseUrl = "https://test-build-plugins.netlify.com/"
+#  buildDir = "dist/static"
+  directory = "dist/static/assets"
