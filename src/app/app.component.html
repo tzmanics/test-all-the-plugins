@@ -1,3 +1,7 @@
-<h1> Testing All The Plugins </h1>
-
+<h1>Testing All The Plugins</h1>
+<ul>
+  <li *ngFor="let route of scully.available$ | async">
+    <a [routerLink]="route.route">{{ route.route }}</a>
+  </li>
+</ul>
 <router-outlet></router-outlet>
