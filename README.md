@@ -1,27 +1,29 @@
-# Test
+# Testing All the Plugins
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.1.
+[🖥 https://test-build-plugins.netlify.com/](https://test-build-plugins.netlify.com/)
 
-## Development server
+[🎛 https://test-build-plugins.netlify.com/](https://app.netlify.com/sites/test-build-plugins/overview)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Check out the [`netlify.toml`](https://github.com/tzmanics/test-all-the-plugins/blob/master/netlify.toml) file to see the plugins tested and their config.
 
-## Code scaffolding
+## Running the Project
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+To check out the project locally run
 
-## Build
+`ng build && npm run scully`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+to get the static files served out of `dist/static`.
 
-## Running unit tests
+## Build Process
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+ You can preview the Netlify build process by running
 
-## Running end-to-end tests
+`netlify build --dry`
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+then run 
 
-## Further help
+`netlify build`
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+to fully run through the build process.
+
+> *you need `npm i @angular/cli @netlify-cli -g` for these commands to work*
