@@ -13,6 +13,11 @@ const routes: Routes = [
   {
     path: "blog",
     loadChildren: () => import("./blog/blog.module").then(m => m.BlogModule)
+  },
+  {
+    path: "svgeez",
+    loadChildren: () =>
+      import("./svgeez/svgeez.module").then(m => m.SvgeezModule)
   }
 ];
 
